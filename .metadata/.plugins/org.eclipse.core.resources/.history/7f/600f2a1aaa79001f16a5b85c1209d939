@@ -1,0 +1,18 @@
+package br.com.bdam;
+
+import java.util.Scanner;
+
+public class ColecoesParte2 {
+
+	public static void main(String[] args) {
+		exercicio1();
+	}
+	
+	public static void exercicio1() {
+		String nomes = "João,Pedro,Ana,Joana,Roberto,Bruno";
+		String[] nomesSeparados = nomes.split(",");
+		//Collections.sort(nomesSeparados);
+		System.out.print(nomesSeparados);
+	}
+ 
+}

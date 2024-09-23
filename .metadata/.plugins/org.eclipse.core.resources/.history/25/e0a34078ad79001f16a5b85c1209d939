@@ -1,0 +1,31 @@
+package br.com.bdam;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+
+public class ColecoesParte2 {
+
+	public static void main(String[] args) {
+		exercicio1();
+	}
+	
+	public static void exercicio1() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Digite nomes separados por: ,");
+		String nomes = s.next();
+		String[] nomesSeparados = new String[nomes.split(",").length];
+		for (int i = 0; i < nomes.split(",").length; i++) {
+			nomesSeparados[i] = nomes.split(",")[i];
+		}
+		Arrays.sort(nomesSeparados);
+		for (String nome : nomesSeparados) {
+			System.out.println(nome);			
+		}
+	}
+	
+	public static void sort(int[] a) {
+		
+	}
+ 
+}
